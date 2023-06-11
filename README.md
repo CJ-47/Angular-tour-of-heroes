@@ -1,3 +1,6 @@
+Gh-pages Build ![Build](https://github.com/CJ-47/Angular-tour-of-heroes/assets/73770668/b34f6957-9cad-4bfa-b13f-6ad900d828fe)
+link : https://cj-47.github.io/Angular-tour-of-heroes/dashboard
+
 # AngularTourOfHeroes
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.5.
