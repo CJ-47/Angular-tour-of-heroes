@@ -17,11 +17,19 @@ export class HeroDetailComponent {
   ) {}
   
   @Input() hero?: Hero;
+  save(): void {
+    if (this.hero) {
+      this.heroService.updateHero(this.hero)
+        .subscribe(() => this.goBack());
+    }
+  }
+
   goBack(): void {
     this.location.back();
   }
   getHero(): void {
     const id = Number(this.route.snapshot.paramMap.get('id'));
+    if(id!=0)
     this.heroService.getHero(id)
       .subscribe(hero => this.hero = hero);
   }
@@ -29,5 +37,6 @@ export class HeroDetailComponent {
     this.getHero();
   }
   
+    
   
 }
